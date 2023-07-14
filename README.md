@@ -24,7 +24,7 @@ The data set was taken from [Kaggle Chest X-Ray Images (Pneumonia)](https://www.
 * **Pre Model**
 <img width="589" alt="Screenshot 2023-07-14 at 10 30 16 AM" src="https://github.com/jj862/Convolutional-Neural-Networks-For-Detection-Of-Pneumonia-in-Chest-X-Ray-Images/assets/69119958/b2cb48b5-a842-4a03-aa73-66403c4d4a4b">
 
-* **With Model_6**
+* **With Model_6 Test Acc: 0.90625**
 <img width="752" alt="Screenshot 2023-07-14 at 10 30 21 AM" src="https://github.com/jj862/Convolutional-Neural-Networks-For-Detection-Of-Pneumonia-in-Chest-X-Ray-Images/assets/69119958/43969155-8b3b-4877-9e7b-e0b51f722186">
 
 ## Defining a Convolutional Neural Network
@@ -41,9 +41,20 @@ The data set was taken from [Kaggle Chest X-Ray Images (Pneumonia)](https://www.
 <img width="484" alt="Screenshot 2023-07-14 at 1 15 09 AM" src="https://github.com/jj862/Convolutional-Neural-Networks-For-Detection-Of-Pneumonia-in-Chest-X-Ray-Images/assets/69119958/8fed5b7f-d81b-41d8-8247-624377e35e3c">
 
 
+# Recommendations
+- Utilize this model as an efficient tool by implementing it in a radiology setting to assist x-ray technicians in pneumonia detection. For instance, upon capturing a chest X-ray, the model can automatically provide its prediction to the technician. This approach would minimize the time required for the technician and/or doctor to review the model's prediction, allowing them to rely on their expertise for a final diagnosis. Such implementation would enhance the overall efficiency of the department, enabling doctors and technicians to focus more on other tasks.
 
+- To enhance the model's performance, it is suggested that x-ray technicians crop out the diaphragm from the image before inputting it into the model to reduce noise.
 
-Glossary: 
+- Additionally, it is recommended that x-ray technicians save the images as 224x224 pixels before feeding them into the model.
+
+# Future Work
+- Retraining the model using smaller images, such as 64x64 pixels or 32x32 pixels.
+- Exploring additional preprocessing methods to remove the diaphragm and reduce noise.
+- Employing a freeze and unfreeze strategy for specific layers of transfer learning models to fine-tune their performance.
+- Conducting further research on alternative methods for tuning convolutional neural networks (CNNs) specifically for chest x-ray and pneumonia classification.
+
+# Glossary: 
 - Precision - Indicates the proportion of positive identifications (model predicted class `1`) which were actually correct. A model which produces no false positives has a precision of 1.0.
 - Recall - Indicates the proportion of actual positives which were correctly classified. A model which produces no false negatives has a recall of 1.0.
 - F1 score - A combination of precision and recall. A perfect model achieves an F1 score of 1.0.
