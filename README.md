@@ -1,4 +1,4 @@
-# Pneumonia-Detection-
+# Convolutional Neural Networks For Detection Of Pneumonia in Chest X-Ray Images
 
 
 
