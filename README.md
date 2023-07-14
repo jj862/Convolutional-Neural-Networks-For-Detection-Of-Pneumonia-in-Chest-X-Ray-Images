@@ -1,6 +1,34 @@
 # Convolutional Neural Networks For Detection Of Pneumonia in Chest X-Ray Images
 
 
+## Overview
+Pneumonia is a lung condition characterized by inflammation primarily targeting the tiny air sacs called alveoli, present in one or both lungs. It can be triggered by viral or bacterial infections, and determining the specific pathogen responsible for causing Pneumonia can be exceedingly difficult.
+
+The process of diagnosing Pneumonia typically begins with a thorough medical history and assessment of self-reported symptoms, followed by a physical examination that typically involves listening to the chest (chest auscultation). If the medical professionals suspect Pneumonia, they may recommend a chest radiograph. However, in adults who exhibit normal vital signs and a healthy lung examination, the likelihood of a Pneumonia diagnosis is low.
+
+## Business Problem
+Pneumonia continues to be a prevalent condition that poses significant morbidity and mortality risks. Annually, it affects around 450 million individuals and leads to approximately 4 million deaths. Early diagnosis plays a crucial role in improving patient outcomes; however, the conventional method of using radiographs often causes delays in diagnosis and treatment. Therefore, the development of a rapid and dependable computer-aided diagnosis system utilizing chest X-rays could be a crucial step toward enhancing outcomes for pneumonia patients.
+
+In this project, I have created and evaluated various Convolutional Neural Networks (CNNs) capable of swiftly distinguishing between normal and pneumonia cases in frontal chest radiographs. The integration of these models could assist doctors and radiologists in identifying potential abnormal pulmonary patterns promptly, thereby expediting the diagnosis process.
+
+## The Dataset
+The data set was taken from [Kaggle Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/code?datasetId=17810&sortBy=voteCount)
+The dataset is divided into 2 directories:
+train
+test
+Within each directory, there're 2 sub-directories:
+NORMAL
+PNEUMONIA
+
+## Images:
+Pre Model
+![pre_model_imgs](https://github.com/jj862/Convolutional-Neural-Networks-For-Detection-Of-Pneumonia-in-Chest-X-Ray-Images/assets/69119958/24917c40-7ea2-4ccc-a205-b37d847393f4)
+
+With Model_6
+![lime_final_model](https://github.com/jj862/Convolutional-Neural-Networks-For-Detection-Of-Pneumonia-in-Chest-X-Ray-Images/assets/69119958/c15cfaa2-e7f3-467e-8ef4-f2ae20341c1d)
+
+
+
 
 Glossary: 
 * **Precision** - Indicates the proportion of positive identifications (model predicted class `1`) which were actually correct. A model which produces no false positives has a precision of 1.0.
