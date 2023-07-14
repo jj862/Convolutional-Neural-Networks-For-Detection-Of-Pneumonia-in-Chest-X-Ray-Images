@@ -54,6 +54,10 @@ The data set was taken from [Kaggle Chest X-Ray Images (Pneumonia)](https://www.
 - Employing a freeze and unfreeze strategy for specific layers of transfer learning models to fine-tune their performance.
 - Conducting further research on alternative methods for tuning convolutional neural networks (CNNs) specifically for chest x-ray and pneumonia classification.
 
+# Contact
+jonah.devoy@yahoo.com
+www.linkedin.com/in/jonahdevoy
+
 # Glossary: 
 - Precision - Indicates the proportion of positive identifications (model predicted class `1`) which were actually correct. A model which produces no false positives has a precision of 1.0.
 - Recall - Indicates the proportion of actual positives which were correctly classified. A model which produces no false negatives has a recall of 1.0.
